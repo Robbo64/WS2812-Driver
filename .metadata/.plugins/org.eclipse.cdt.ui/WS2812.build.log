@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project WS2812 ****
+
+"C:\\ti\\ccs1040\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../SPI_uDMA_drv.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/sandbox/WS2812_Drv/WS2812" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs="ccs" --define=CLASS_IS_TM4C129 --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="SPI_uDMA_drv.d_raw"  "../SPI_uDMA_drv.c"
+Finished building: "../SPI_uDMA_drv.c"
+ 
+Building target: "WS2812.out"
+Invoking: Arm Linker
+"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=CLASS_IS_TM4C129 --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"WS2812.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="WS2812_linkInfo.xml" --rom_model -o "WS2812.out" "./SPI_uDMA_drv.obj" "./WS2812_drv.obj" "./samplePatterns.obj" "./tm4c1294ncpdt_startup_ccs.obj" "./uDMA_example.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "WS2812.out"
+ 
+
+**** Build Finished ****

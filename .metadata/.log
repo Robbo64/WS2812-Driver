@@ -1,0 +1,437 @@
+!SESSION 2022-12-06 06:53:04.280 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2022-12-06 06:53:24.231
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2022-12-06 06:53:24.233
+!MESSAGE debugServerDir=C:/ti/ccs1040/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.763
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.765
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.767
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.769
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.771
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.781
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.806
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.818
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.838
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2022-12-06 06:53:29.922
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.equinox.event 4 0 2022-12-06 06:53:34.432
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@799fc4c9 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@76219fe, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@799fc4c9 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@76219fe, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@14d7a962
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.lambda$0(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4629)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:139)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:188)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:963)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1505)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:119)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:345)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:687)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:50)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:176)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:438)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:431)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.findValidElementsToMinimize(MinMaxAddon.java:824)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:767)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:696)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:387)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 92 more
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2022-12-06 06:53:34.749
+!MESSAGE CCS HTTP adapter started! [ccs.port:53644] - Open 'http://localhost:53644/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.ui 1 0 2022-12-06 06:53:37.664
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1040/ccs
+	Workspace location: C:/sandbox/WS2812_Drv
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2022-12-06 06:53:37.763
+!MESSAGE Unexpected CCS exit detected [11/16/22 8:41 AM]!!!
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-12-06 06:54:38.576
+!MESSAGE Indexed 'WS2812' (2 sources, 4 headers) in 0.248 sec: 52 declarations; 339 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.598
+!MESSAGE Unable to parse [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/] into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/].
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.601
+!MESSAGE Unable to parse [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/] into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/].
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.611
+!MESSAGE Unable to parse [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/] into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/].
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.616
+!MESSAGE Unable to parse [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/] into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/].
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.620
+!MESSAGE Unable to parse [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/] into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/].
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-12-06 07:16:29.627
+!MESSAGE Unable to parse [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/guicomposer/v7.2/all_extras_repo/ into an URI: Illegal character in scheme name at index 0: [http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/guicomposer/v7.2/all_extras_repo/.
+
+!ENTRY org.eclipse.ui 2 2 2022-12-06 07:26:45.455
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 07:44:53.919
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 07:46:26.539
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 07:46:26.857
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.common.project.core 4 0 2022-12-06 07:46:28.646
+!MESSAGE Failed to parse product-descriptor file 'C:\ti\tivaware_c_series_2_1_4_178\package.tirex.json'
+!STACK 0
+org.json.JSONException: Duplicate key "devices"
+	at org.json.JSONObject.putOnce(JSONObject.java:1129)
+	at org.json.JSONObject.<init>(JSONObject.java:213)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:363)
+	at org.json.JSONArray.<init>(JSONArray.java:117)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:366)
+	at com.ti.common.project.core.products.reader.ProductDescriptor_JSON.createFrom(ProductDescriptor_JSON.java:52)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadProductDescriptor(ProductManifestReader.java:247)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadManifest(ProductManifestReader.java:141)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.readManifest(ProductManifestReader.java:120)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:409)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:467)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.toSearchPath(ADiscoveryManager.java:379)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getProductDiscoverySearchPath(ProductDiscoveryManager.java:687)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.discoverExtensionSites_all(ExtensionSiteDiscoveryManager.java:155)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.getAllDiscoveredExtensionSites(ExtensionSiteDiscoveryManager.java:510)
+	at org.eclipse.rtsc.xdctools.managedbuild.core.products.RTSCProductDiscoveryManager.getAllDiscoveredProductDescriptors(RTSCProductDiscoveryManager.java:533)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getAllDiscoveredProductDescriptors(ProductDiscoveryManager.java:1030)
+	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$4.handle(IDEServlet.java:233)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.doGet(BaseApiServlet.java:176)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.handle(BaseApiServlet.java:162)
+	at com.ti.ccstudio.project.ui.webcontent.internal.ProjectWebcontentRouteProvider.handle(ProjectWebcontentRouteProvider.java:107)
+	at com.ti.ccstudio.webcontent.internal.RouteHandler.handle(RouteHandler.java:61)
+	at com.ti.ccstudio.webcontent.internal.HttpServerHandlerManager.handle(HttpServerHandlerManager.java:40)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 07:55:40.064
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 07:55:40.066
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 08:36:20.458
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2022-12-06 08:36:20.458
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.ui 2 2 2022-12-06 08:38:35.977
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.175
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000900c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.178
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009014 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.181
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009018 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.184
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000901c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.186
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009024 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.189
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009000 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.192
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009004 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.195
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009008 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.198
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009010 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.200
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009020 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.203
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009fc0 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:39.206
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009fc8 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.328
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009024 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.337
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009000 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.340
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009004 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.343
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009008 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.346
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000900c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.349
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009010 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.352
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009014 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.355
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009018 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:21:49.357
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000901c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:32:30.072
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:32:30.076
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.162
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009018 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.209
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000901c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.212
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009024 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.214
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009000 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.217
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009004 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.219
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009008 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.222
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x4000900c on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.225
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009010 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.227
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009014 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.230
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009020 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.233
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009fc0 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:37:25.235
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40009fc8 on Page 0 of Length 0x4: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:38:06.746
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:38:06.754
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:41:03.129
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 10:41:03.134
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 11:02:11.208
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 11:02:11.216
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 11:03:51.124
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 11:03:51.211
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 12:11:42.374
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2022-12-06 12:11:42.382
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
